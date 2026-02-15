@@ -1,9 +1,5 @@
 <?php
-$payload = json_encode([
-    'event' => 'order.created',
-    'id' => 12345,
-    'timestamp' => time()
-]);
+$payload = file_get_contents(__DIR__ . '/sample-payload.json');
 
 $secret = 'super_secret_key_here';
 $signature = hash_hmac('sha256', $payload, $secret);

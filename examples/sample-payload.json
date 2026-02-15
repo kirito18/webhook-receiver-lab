@@ -1,0 +1,15 @@
+{
+  "event": "order.created",
+  "id": "evt_123456789",
+  "created_at": "2026-02-15T00:00:00Z",
+  "data": {
+    "order_id": 98765,
+    "customer": {
+      "id": 501,
+      "email": "customer@example.com"
+    },
+    "amount": 149.99,
+    "currency": "USD",
+    "status": "paid"
+  }
+}
